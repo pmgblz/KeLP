@@ -1,0 +1,51 @@
+sbatch tune_global_b.sh
+sbatch tune_global_wnb_0.9.sh
+sbatch tune_global_wnb_part1.sh
+sbatch tune_global_wnb_part2.sh
+sbatch tune_global_wnb_part3.sh
+sbatch tune_global_wnb_part4.sh
+sbatch tune_global_wnb_part5.sh
+
+sbatch tune_height_b.sh
+sbatch tune_height_wnb_0.9.sh
+sbatch tune_height_wnb_part1.sh
+sbatch tune_height_wnb_part2.sh
+sbatch tune_height_wnb_part3.sh
+sbatch tune_height_wnb_part4.sh
+sbatch tune_height_wnb_part5.sh
+
+sbatch tune_platelet_count_b.sh
+sbatch tune_platelet_count_wnb_0.9.sh
+sbatch tune_platelet_count_wnb_part1.sh
+sbatch tune_platelet_count_wnb_part2.sh
+sbatch tune_platelet_count_wnb_part3.sh
+sbatch tune_platelet_count_wnb_part4.sh
+sbatch tune_platelet_count_wnb_part5.sh
+
+sbatch tune_platelet_volume_b.sh
+sbatch tune_platelet_volume_wnb_0.9.sh
+sbatch tune_platelet_volume_wnb_part1.sh
+sbatch tune_platelet_volume_wnb_part2.sh
+sbatch tune_platelet_volume_wnb_part3.sh
+sbatch tune_platelet_volume_wnb_part4.sh
+sbatch tune_platelet_volume_wnb_part5.sh
+
+sbatch tune_platelet_crit_b.sh
+sbatch tune_platelet_crit_wnb_0.9.sh
+sbatch tune_platelet_crit_wnb_part1.sh
+sbatch tune_platelet_crit_wnb_part2.sh
+sbatch tune_platelet_crit_wnb_part3.sh
+sbatch tune_platelet_crit_wnb_part4.sh
+sbatch tune_platelet_crit_wnb_part5.sh
+
+sbatch tune_platelet_width_b.sh
+sbatch tune_platelet_width_wnb_0.9.sh
+sbatch tune_platelet_width_wnb_part1.sh
+sbatch tune_platelet_width_wnb_part2.sh
+sbatch tune_platelet_width_wnb_part3.sh
+sbatch tune_platelet_width_wnb_part4.sh
+sbatch tune_platelet_width_wnb_part5.sh
+
+
+
+

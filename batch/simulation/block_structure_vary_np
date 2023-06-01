@@ -1,0 +1,47 @@
+
+
+
+
+function block_structure_vary_np()
+    np_ratio = [0.5:0.1:4;]
+    sparsity = [0.025, 0.05, 0.1]
+    nrep = 100
+    sigmadirichlet = ["FALSE"]
+    blocksigma = [1]
+    cuts = [2]
+    sdistbeta = [0.1, 0.2, 0.3]
+    rhos = [0.8]
+    ps = [1000]
+    gts = [1]
+    bstindicator = [1]
+    for np in np_ratio, s in sparsity, nr in nrep, rho in rhos, c in cuts, p in ps, bs in blocksigma, gt in gts, sd in sdistbeta, bsti in bstindicator
+        # create .sh file to submit jobs
+        filename = "submit.sh"
+        open(filename, "w") do io
+            println(io, "#!/bin/bash")
+            println(io, "#")
+            println(io, "#SBATCH --job-name=f$np")
+            println(io, "#")
+            println(io, "#SBATCH --time=24:00:00")
+            println(io, "#SBATCH --mem-per-cpu=24G")
+            println(io, "#SBATCH --partition=normal,owners,candes")
+            println(io, "")
+            println(io, "#save job info on joblog:")
+            println(io, "echo \"Job \$JOB_ID started on:   \" `hostname -s`")
+            println(io, "echo \"Job \$JOB_ID started on:   \" `date `")
+            println(io, "")
+            println(io, "# run code")
+            println(io, "Rscript block_structure_vary_np.R $np $s $nr $rho $c $p $bs $gt $sd $bsti")
+            println(io, "")                          
+            println(io, "#echo job info on joblog:")
+            println(io, "echo \"Job \$JOB_ID ended on:   \" `hostname -s`")
+            println(io, "echo \"Job \$JOB_ID ended on:   \" `date `")
+            println(io, "#echo \" \"")
+        end
+        # submit job
+        run(`sbatch $filename`)
+        println("submitted np $np sparsity $s repetitions $nrep")
+        rm(filename, force=true)
+    end
+end
+
