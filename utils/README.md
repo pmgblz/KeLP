@@ -28,6 +28,9 @@
    	 
 - power_fdr_aux: Helper functions for calculating power and fdr.
 
+- read_process_UKB_lasso_aux.R: read in and process UKB (lasso) results. The data is not available; we have applied for it from a source (the UKBiobank) and interested parties can also apply to the same source).
+
+
 - sim_data_aux: Functions to simulate data:
 	1. Function to group structure
 	2. Function to generate data (X, Y and Sigma).
