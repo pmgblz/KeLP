@@ -7,7 +7,7 @@
 
 - utils: Any functions used in the analysis. There is a separate description document in the utils folder, explaining the function of each file.
 
-- UKB_Analysis: Contains code for UKB application. **IMPORTANT: Data is not available. The data is not available; we have applied for it from a source (the UKBiobank) and interested parties can also apply to the same source**
+- ukb_Analysis: Contains code for UKB application. **IMPORTANT: Data is not available. The data is not available; we have applied for it from a source (the UKBiobank) and interested parties can also apply to the same source**
 
 
 Each folder contains another README file explaining the files within the folder. 
