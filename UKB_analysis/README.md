@@ -1,6 +1,7 @@
 
 
-IMPORTANT: Data is not available. We have applied for the data from the UK Biobank. Interested parties can do the same. 
+**IMPORTANT: Data is not available. We have applied for the data from the UK Biobank. Interested parties can do the same. 
+**
 
 - Step 1: Get Phenotypes + Merge with Genotypes
 
